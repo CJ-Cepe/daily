@@ -18,3 +18,33 @@ Example 1:
     Step 5) 2 is even; divide by 2 and obtain 1. 
     Step 6) 1 is odd; subtract 1 and obtain 0.
 */
+
+// Solution 1 using modulo operator
+
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var numberOfSteps = function (num) {
+    let step = 0;
+    while (num) {
+        num % 2 == 0 ? (num /= 2) : num--;
+        step++;
+    }
+    return step;
+};
+
+// Solution 2 using bitwise
+
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var numberOfSteps = function (num) {
+    let step = 0;
+    while (num) {
+        (num & 1) != 1 ? (num >>= 1) : num--;
+        step++;
+    }
+    return step;
+};
