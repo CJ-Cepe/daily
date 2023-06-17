@@ -8,3 +8,25 @@ Given an integer n, return a string array answer (1-indexed) where:
     answer[i] == i (as a string) if none of the above conditions are true.
 
 */
+
+/**
+ * @param {number} n
+ * @return {string[]}
+ */
+var fizzBuzz = function (n) {
+    let arrayContainer = [];
+    for (let i = 1; i <= n; i++) {
+        arrayContainer.push('');
+
+        if (i % 3 == 0) {
+            arrayContainer[i - 1] += 'Fizz';
+        }
+        if (i % 5 == 0) {
+            arrayContainer[i - 1] += 'Buzz';
+        }
+        if (arrayContainer[i - 1] == '') {
+            arrayContainer[i - 1] += i;
+        }
+    }
+    return arrayContainer;
+};
