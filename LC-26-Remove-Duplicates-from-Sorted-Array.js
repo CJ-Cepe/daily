@@ -36,3 +36,18 @@ Solution
 Notes
     1. JS when passing objects and array is pass by reference
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var removeDuplicates = function (nums) {
+    let i = 0;
+    nums.forEach((value) => {
+        if (value !== nums[i]) {
+            i++;
+            nums[i] = value;
+        }
+    });
+    return ++i;
+};
