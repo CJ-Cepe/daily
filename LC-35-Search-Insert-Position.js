@@ -26,4 +26,18 @@ Solution 1
     4. else if current element > target, return current index
     5. outside of loop, return nums.length 
 
+Solution 2
+    1. use binary search
+    2. to be continue
+
+Notes
+    * negative values are truthy values
+    * all are truthy except: 0, NaN, undefined, null, & ''
+    * binary search works for sorted array
+    *   divides array to middle
+    *   easy to understand, tricky to implement
+    * sequential search
+    *   interates through the whole array one by one
+    *   does not need to be sorted
+
 */
