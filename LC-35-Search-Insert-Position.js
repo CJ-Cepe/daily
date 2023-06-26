@@ -41,3 +41,24 @@ Notes
     *   does not need to be sorted
 
 */
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+
+//solution 1
+let val = nums.indexOf(target);
+console.log('indexOf = ', val);
+if (val >= 0) {
+    return val;
+} else {
+    for (let i = 0; i < nums.length; i++) {
+        console.log(i);
+        if (nums[i] > target) {
+            return i;
+        }
+    }
+    return nums.length;
+}
