@@ -61,4 +61,20 @@ if (val >= 0) {
         }
     }
     return nums.length;
+
+    //solution 2
+    let low = 0,
+        high = nums.length - 1,
+        mid = low + Math.floor((high - low) / 2);
+    while (low <= high) {
+        if (nums[mid] == target) {
+            return mid;
+        } else if (nums[mid] < target) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+        mid = low + Math.floor((high - low) / 2);
+    }
+    return nums[mid] > target ? mid : mid + 1;
 }
