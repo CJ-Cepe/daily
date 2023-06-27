@@ -28,7 +28,12 @@ Solution 1
 
 Solution 2
     1. use binary search
-    2. to be continue
+    2. set low = 0, high = last element, and mid = low + (high-low)/2
+    3. while low <= high, check the mid element
+    4. if equals to target, return mid
+    5. if mid > target, high = mid - 1
+    6. if mid < target, low = mid + 1
+    7. if no equals, return mid if target < last elem, and mid + 1 if target >= last elem
 
 Notes
     * negative values are truthy values
