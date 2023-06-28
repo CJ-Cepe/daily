@@ -33,3 +33,26 @@ Solution 3 - split and pop
     3. pop last element
     4. return length of last element
 */
+
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var lengthOfLastWord = function (s) {
+    //Solution 1
+    s = s.trimEnd();
+    if (!s) return 0; //handle empty string
+    for (let i = s.length - 1; i >= 0; i--) {
+        if (s[i] === ' ') {
+            return s.length - 1 - i;
+        }
+    }
+    return s.length; //handle string without space
+
+    //Solution 2
+    s = s.trim();
+    return s.length - 1 - s.lastIndexOf(' ');
+
+    //Solution 3
+    return s.trim().split(' ').pop().length;
+};
