@@ -1,4 +1,4 @@
-#Notes
+# Notes
 
 -   JS when passing objects and array is pass by reference
 -   all are truthy except: 0, NaN, undefined, null, & ''
