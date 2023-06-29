@@ -17,3 +17,8 @@
     -   trim()
     -   trimStart()
     -   trimEnd()
+-   Js number has a safe limit, use BigInt for bigger number
+-   BigInt number ends with n e.g. 1n, 9007199254740991n
+-   you can convert array contents with map(dataType) e.g. map(Number)
+-   array.shift() changes the whole array by removing first element
+-   array.unshift(value) change the array by adding the value in the first index
