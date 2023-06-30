@@ -27,3 +27,4 @@
 -   you can convert binary string to BigInt with BigInt(`0b${variable}`)
     -   better holding long values
 -   you can convert decimal to binary using Number.toString(2)
+-   in for loop, the condition is dynamic. so if in property length, it can change
