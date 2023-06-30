@@ -22,3 +22,8 @@
 -   you can convert array contents with map(dataType) e.g. map(Number)
 -   array.shift() changes the whole array by removing first element
 -   array.unshift(value) change the array by adding the value in the first index
+-   you can convert binary string to int with parseInt(variable, 2)
+    -   but cant handle long values
+-   you can convert binary string to BigInt with BigInt(`0b${variable}`)
+    -   better holding long values
+-   you can convert decimal to binary using Number.toString(2)
