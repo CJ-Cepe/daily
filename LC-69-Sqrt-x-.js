@@ -20,4 +20,14 @@ Example 2:
     Explanation: The square root of 8 is 2.82842..., 
         and since we round it down to the nearest integer, 2 is returned.
 
+Solution 1
+    1.take the square root of a number by raising to its equivalent exponent 
 */
+
+/**
+ * @param {number} x
+ * @return {number}
+ */
+var mySqrt = function (x) {
+    return Math.floor(x ** (1 / 2));
+};
