@@ -28,3 +28,6 @@
     -   better holding long values
 -   you can convert decimal to binary using Number.toString(2)
 -   in for loop, the condition is dynamic. so if in property length, it can change
+-   x \* x = z === x = z/x (from sqrt problem)
+-   square root of a number can only exist with its (target/2) + 1
+-   there is no range() in js
