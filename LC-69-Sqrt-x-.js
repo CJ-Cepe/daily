@@ -21,7 +21,18 @@ Example 2:
         and since we round it down to the nearest integer, 2 is returned.
 
 Solution 1
-    1.take the square root of a number by raising to its equivalent exponent 
+    1.take the square root of a number by raising to its equivalent exponent
+    
+Solution 2 - binary search 
+    1. square range of numbers, use binary to reduce search space 
+    2. set low = 0
+    3. set high = (target / 2) + 1  to reduce search space, its root can only exist here
+    4. while loop, low <= high
+    5. compute for mid = low + (high-low)/2
+    6. if (mid^2 <= target && (mid+1)^2 > target) - to handle # being round down
+    7.      return mid
+    8. else if (mid^2 < target) low = mid + 1
+    9. else if (mid^2 > target) high = mid - 1
 */
 
 /**
