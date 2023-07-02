@@ -40,5 +40,23 @@ Solution 2 - binary search
  * @return {number}
  */
 var mySqrt = function (x) {
+    //Solution 1
     return Math.floor(x ** (1 / 2));
+
+    //Solution 2
+    if (x === 1 || x === 0) return x;
+
+    let low = 0;
+    let high = Math.floor(x / 2) + 1;
+
+    while (low <= high) {
+        let mid = low + Math.floor((high - low) / 2);
+        if (mid ** 2 <= x && (mid + 1) ** 2 > x) {
+            return mid;
+        } else if (mid ** 2 < x) {
+            low = mid + 1;
+        } else if (mid ** 2 > x) {
+            high = mid - 1;
+        }
+    }
 };
