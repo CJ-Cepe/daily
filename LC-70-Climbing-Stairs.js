@@ -21,4 +21,28 @@ Example 2:
     1. 1 step + 1 step + 1 step
     2. 1 step + 2 steps
     3. 2 steps + 1 step
+
+Solution 1 - fibonacci
+    1. the solution per each third_step is first_step + second_step
+    2. loop through this until n number is achieved
+    3. we set first_step = 1, second_step = 2, while third_step = 0
+    4. we start loop in 3
 */
+
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var climbStairs = function (n) {
+    //solution 1 - fibonacci, can also be put in array
+    let currentValue = 0,
+        a = 1,
+        b = 2;
+    if (n <= 2) return n;
+    for (let i = 3; i <= n; i++) {
+        currentValue = a + b;
+        a = b;
+        b = currentValue;
+    }
+    return currentValue;
+};
