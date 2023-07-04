@@ -31,3 +31,9 @@
 -   x \* x = z === x = z/x (from sqrt problem)
 -   square root of a number can only exist with its (target/2) + 1
 -   there is no range() in js
+-   spread operator ...
+-   sort function by default, sort elements by ascending alphanumeric
+    -   built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+    -   to sort reverse fo reverse()
+    -   to sort numerically do sort(function (a, b) {return a - b})
+    -   to sort reverse do sort(function (a, b){return b - a})
