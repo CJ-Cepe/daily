@@ -32,6 +32,8 @@
 -   square root of a number can only exist with its (target/2) + 1
 -   there is no range() in js
 -   spread operator ...
+    -   allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.
+    -   In an object literal, the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.
 -   sort function by default, sort elements by ascending alphanumeric
     -   built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
     -   to sort reverse fo reverse()
