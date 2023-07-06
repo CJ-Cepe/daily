@@ -65,4 +65,25 @@ var merge = function (nums1, m, nums2, n) {
         nums1[i] = nums2[j];
     }
     nums1.sort((a, b) => a - b);
+
+    //Solution 5
+    //1. traverse backwards
+    //2. set index for last element of num1 and num2
+    //3. compare each element
+    //4. if which one is larger takes the place
+
+    let i = m - 1,
+        j = n - 1,
+        k = m + n - 1;
+
+    while (j >= 0) {
+        if (nums1[i] > nums2[j]) {
+            nums1[k] = nums1[i];
+            i--;
+        } else {
+            nums1[k] = nums2[j];
+            j--;
+        }
+        k--;
+    }
 };
