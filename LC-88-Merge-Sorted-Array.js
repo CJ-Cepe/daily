@@ -43,6 +43,12 @@ Solution 1
 Solution2
     1. append nums2 to nums1
     2. sort
+
+Solution 3
+    1. traverse backwards
+    2. set index for last element of num1 and num2
+    3. compare each element
+    4. if which one is larger takes the place
 */
 
 /**
@@ -66,12 +72,7 @@ var merge = function (nums1, m, nums2, n) {
     }
     nums1.sort((a, b) => a - b);
 
-    //Solution 5
-    //1. traverse backwards
-    //2. set index for last element of num1 and num2
-    //3. compare each element
-    //4. if which one is larger takes the place
-
+    //Solution 3
     let i = m - 1,
         j = n - 1,
         k = m + n - 1;
