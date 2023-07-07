@@ -39,3 +39,13 @@
     -   to sort reverse fo reverse()
     -   to sort numerically do sort(function (a, b) {return a - b})
     -   to sort reverse do sort(function (a, b){return b - a})
+-   regex to remove special characters, including space is `/[^a-zA-Z0-9]/g, "" `
+-   string method split('') converts string/characters to array
+-   array method join('') converts array to string
+-   string has a method for casings
+    -   toUpperCase()
+    -   toLowerCase()
+-   ways to convert string to array
+    -   split('')
+    -   Array.from()
+-   reverse method is only in array not in string :'(
