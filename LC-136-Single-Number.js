@@ -19,4 +19,26 @@ Example 3:
     Input: nums = [1]
     Output: 1
 
+
+Solution 1
+    1. sort array
+    2. Traverse through the whole array with for loop
+    3. if current element is similar with next number, i++
+    4. else return element
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var singleNumber = function (nums) {
+    //Solution 1
+    nums.sort();
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] == nums[i + 1]) {
+            i++;
+        } else {
+            return nums[i];
+        }
+    }
+};
