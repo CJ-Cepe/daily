@@ -25,6 +25,11 @@ Solution 1
     2. Traverse through the whole array with for loop
     3. if current element is similar with next number, i++
     4. else return element
+
+Solution 2
+    1. traverse through the whole array
+    2. per element, check if there is a similarity
+    3. if there is only 1, itself, return element
 */
 
 /**
@@ -38,6 +43,19 @@ var singleNumber = function (nums) {
         if (nums[i] == nums[i + 1]) {
             i++;
         } else {
+            return nums[i];
+        }
+    }
+
+    //Solution 2
+    for (let i = 0; i < nums.length; i++) {
+        let z = 0;
+        for (let j = 0; j < nums.length; j++) {
+            if (nums[i] === nums[j]) {
+                z++;
+            }
+        }
+        if (z == 1) {
             return nums[i];
         }
     }
