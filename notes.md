@@ -49,3 +49,9 @@
     -   split('')
     -   Array.from()
 -   reverse method is only in array not in string :'(
+-   bitwise operator ^ performs XOR
+    -   0 ^ 0 = 0
+    -   1 ^ 1 = 0
+    -   0 ^ 1 = 1
+    -   1 ^ 0 = 1
+    -   when performing ^ on two/EVEN instances of a same number, it cancels each other => 0
