@@ -30,6 +30,11 @@ Solution 2
     1. traverse through the whole array
     2. per element, check if there is a similarity
     3. if there is only 1, itself, return element
+
+Solution 3
+    1. initialized a variable called uniqueElement set to 0
+    2. traverse through the whole array
+    3  per element perform XOR with uniqueElement and set its content
 */
 
 /**
@@ -59,4 +64,11 @@ var singleNumber = function (nums) {
             return nums[i];
         }
     }
+
+    //Solution 3
+    let uniqueElement = 0;
+    for (let i = 0; i < nums.length; i++) {
+        uniqueElement = uniqueElement ^ nums[i];
+    }
+    return uniqueElement;
 };
