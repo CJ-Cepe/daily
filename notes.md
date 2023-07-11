@@ -55,3 +55,12 @@
     -   0 ^ 1 = 1
     -   1 ^ 0 = 1
     -   when performing ^ on two/EVEN instances of a same number, it cancels each other => 0
+-   boyer moore algorithm, mainly used for finding pattern in pool of strings
+    -   can be used find the majority element
+        -   ONLY! with the assumption that there is always a majority element who's > n/2
+    -   has 2 rules
+        -   bad character rule --> find the same character in the pattern and move to the right
+        -   suffix rule --> find the fit suffix in the pattern and move to the right
+-   in object, if a key is not present it would return undefine
+    -   to solve this just use or
+        -   numInstances[nums[i]] = numInstances[nums[i]] + 1 || 1;
