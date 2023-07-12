@@ -17,6 +17,11 @@ Example 2:
 
 Solution 1 - array reverse method
     1. use array reverse method
+
+Solution 2 - two pointers
+    1. initialize a variable to hold temporary variables
+    2. traverse through the whole array (for or while loop)
+    3. swap values of elements corresponding to the pointers
 */
 
 /**
@@ -26,4 +31,14 @@ Solution 1 - array reverse method
 var reverseString = function (s) {
     //Solution 1 - array method
     s.reverse();
+
+    //Solution 2 = two pointers - for loop
+    let temp = '';
+    for (let i = 0, j = s.length - 1; i <= j; i++, j--) {
+        temp = s[j];
+        s[j] = s[i];
+        s[i] = temp;
+    }
+
+    //Solution 3 = array destructuring
 };
