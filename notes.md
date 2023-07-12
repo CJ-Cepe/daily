@@ -64,3 +64,5 @@
 -   in object, if a key is not present it would return undefine
     -   to solve this just use or
         -   numInstances[nums[i]] = numInstances[nums[i]] + 1 || 1;
+-   in for loop, you can declare two variables and iterate them differently since loop condition is dynamic
+    -   sample : for(let i = 0, j = s.length-1; i <= j ; i++, j--)
