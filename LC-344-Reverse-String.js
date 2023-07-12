@@ -32,12 +32,24 @@ var reverseString = function (s) {
     //Solution 1 - array method
     s.reverse();
 
-    //Solution 2 = two pointers - for loop
+    //Solution 2.1 = two pointers - for loop
     let temp = '';
     for (let i = 0, j = s.length - 1; i <= j; i++, j--) {
         temp = s[j];
         s[j] = s[i];
         s[i] = temp;
+    }
+
+    //Solution 2.2 = two pointers - while loop
+    let temp = '',
+        i = 0,
+        j = s.length - 1;
+    while (i <= j) {
+        temp = s[j];
+        s[j] = s[i];
+        s[i] = temp;
+        i++;
+        j--;
     }
 
     //Solution 3 = array destructuring
