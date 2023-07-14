@@ -66,3 +66,22 @@
         -   numInstances[nums[i]] = numInstances[nums[i]] + 1 || 1;
 -   in for loop, you can declare two variables and iterate them differently since loop condition is dynamic
     -   sample : for(let i = 0, j = s.length-1; i <= j ; i++, j--)
+-   ES6 destructuring assignment
+    -   deSTRUCTuring not deconstructuring
+    -   a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables
+    -   [a, b] = [10, 20]; --> a = 10, b = 20
+    -   [a, b, ...rest] = [10, 20, 30, 40, 50] //spreader or rest property
+        -   a = 10
+        -   b = 20
+        -   c = Array [30, 40, 50]
+    -   obj = {a: 1, b: 2}; {a, b} = obj
+    -   a = obj.a
+    -   b = obj.b
+    -   function f() {return [1, 2, 3];} const [a, , b] = f(); const [c] = f();
+        -   a = 1
+        -   b = 3
+        -   c = 1
+    -   !!! in the code block " console.log("sample") [a, b] = [10, 20] " would result to error
+        -   syntax is corrent but Add a semicolon to prevent the automatic semicolon insertion from thinking you want to do console.log(...)[...] instead of array destructuring
+        -   proper -> console.log("sample"); [a, b] = [10, 20]
+        -   great example on the importance of adding semicolon
