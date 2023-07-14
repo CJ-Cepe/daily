@@ -40,6 +40,7 @@ var reverseString = function (s) {
     //Solution 2.1 = two pointers - for loop
     let temp = '';
     for (let i = 0, j = s.length - 1; i <= j; i++, j--) {
+        //can also do mirroring instead of creating 2 pointers
         temp = s[j];
         s[j] = s[i];
         s[i] = temp;
