@@ -22,6 +22,11 @@ Solution 2 - two pointers
     1. initialize a variable to hold temporary variables
     2. traverse through the whole array (for or while loop)
     3. swap values of elements corresponding to the pointers
+
+Solution 3 - ES6 array destructing assignment
+    1. initialize two pointers, pointing to the first and last element
+    2. traverse through the whole array with a condition of i < j
+    3. assign element [j] -> index = i & element[i] -> index = j
 */
 
 /**
@@ -53,4 +58,11 @@ var reverseString = function (s) {
     }
 
     //Solution 3 = array destructuring
+    let i = 0,
+        j = s.length - 1;
+    while (i < j) {
+        [s[i], s[j]] = [s[j], s[i]];
+        i++;
+        j--;
+    }
 };
