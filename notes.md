@@ -85,3 +85,8 @@
         -   syntax is corrent but Add a semicolon to prevent the automatic semicolon insertion from thinking you want to do console.log(...)[...] instead of array destructuring
         -   proper -> console.log("sample"); [a, b] = [10, 20]
         -   great example on the importance of adding semicolon
+-   You can use OR || to check if an array has an element with that index
+    -   mergeString += word1[i] || ''
+-   Git warning "warning: LF will be replaced by CRLF"
+    -   mostly occurs when the value of the Git configuration variable is settled as “true”.
+    -   The reason behind the warning is that the committed files are different from what you saved.
