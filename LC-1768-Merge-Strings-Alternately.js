@@ -24,4 +24,33 @@ Example 3:
     word2:    p   q 
     merged: a p b q c   d
 
+Solution 1 - use loop/1 pointer
+    1. initialize variables
+        i   =   0 --> as index/pointer
+        maxLength = length of the longest string
+        mergeString = "" --> where the merge string is placed
+    2. traverse through the whole arrays until the length of the longest string
+    3. concatenate current element, corresponding to the index
+    4. if undefined, concatenate an empty string instead
+    
 */
+
+/**
+ * @param {string} word1
+ * @param {string} word2
+ * @return {string}
+ */
+var mergeAlternately = function (word1, word2) {
+    //Solution 1
+    let i = 0,
+        mergeString = '',
+        maxLength = Math.max(word1.length, word2.length);
+
+    while (i < maxLength) {
+        mergeString += word1[i] || '';
+        mergeString += word2[i] || '';
+        i++;
+    }
+
+    return mergeString;
+};
