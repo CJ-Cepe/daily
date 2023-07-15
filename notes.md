@@ -88,5 +88,4 @@
 -   You can use OR || to check if an array has an element with that index
     -   mergeString += word1[i] || ''
 -   Git warning "warning: LF will be replaced by CRLF"
-    -   mostly occurs when the value of the Git configuration variable is settled as “true”.
-    -   The reason behind the warning is that the committed files are different from what you saved.
+    -   In Unix systems the end of a line is represented with a line feed (LF). In windows a line is represented with a carriage return (CR) and a line feed (LF) thus (CRLF).when you get code from git that was uploaded from a unix system they will only have an LF.
