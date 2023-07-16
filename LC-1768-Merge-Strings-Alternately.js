@@ -54,7 +54,7 @@ var mergeAlternately = function (word1, word2) {
 
     return mergeString;
 
-    //Solution 1
+    //Solution 1.2
     let i = 0,
         mergeString = '',
         maxLength = Math.max(word1.length, word2.length);
