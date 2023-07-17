@@ -29,6 +29,13 @@ Solution 1
     6. multiply the chunk and check if simillar to both of the string
     7. if it is, return slice chunk
     8. ellse return empty string
+
+Solution 2
+    1. obviously the largest string in which both are divisible has a length of their GCD
+    2. Get the gcd and slice any of the string from 0 - GCD
+    3. to get the GCD of two values, perform euclidean algorithm
+    4. get the length of both string, and repeatedly subtract the lesser from the larger
+    5. it the result is similar or both has similar values, that is the gcd
 */
 
 /**
