@@ -89,3 +89,5 @@
     -   mergeString += word1[i] || ''
 -   Git warning "warning: LF will be replaced by CRLF"
     -   In Unix systems the end of a line is represented with a line feed (LF). In windows a line is represented with a carriage return (CR) and a line feed (LF) thus (CRLF).when you get code from git that was uploaded from a unix system they will only have an LF.
+-   String has a method to repeat string --> string.repeat(int)
+-   when the largest/longest is needed, try being greedy and search while decrementing
