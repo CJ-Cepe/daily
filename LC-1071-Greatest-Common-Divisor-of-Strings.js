@@ -21,7 +21,14 @@ Example 3:
     Output: ""
 
 Solution 1
-
+    1. use the clues and be greedy
+    2. get the smallest length of string
+    3. create a loop, decreasing from smallest length to 0
+    4. slice that chunk of array from any of the string since they are the same
+    5. check if divisible, since it is a concatenated copy
+    6. multiply the chunk and check if simillar to both of the string
+    7. if it is, return slice chunk
+    8. ellse return empty string
 */
 
 /**
