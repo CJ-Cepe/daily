@@ -36,6 +36,11 @@ Solution 2
     3. to get the GCD of two values, perform euclidean algorithm
     4. get the length of both string, and repeatedly subtract the lesser from the larger
     5. it the result is similar or both has similar values, that is the gcd
+    6. you can also add both string (str1+str2) != (str2+str1) to compare if there 
+        is really a gcd amongs them or simillar characters. 
+        this will filter same length strings but no similar character/pattern
+    7. the condition in while is while the lengths are not equal, in order
+        to handle string with pattern/divisibility but equal in length
 */
 
 /**
@@ -73,4 +78,20 @@ var gcdOfStrings = function (str1, str2) {
         }
     }
     return '';
+
+    //Solution 2 - using GCD euclidean algorithm
+    let firstLength = str1.length,
+        secondLength = str2.length;
+
+    if (str1 + str2 != str2 + str1) return '';
+
+    while (firstLength != secondLength) {
+        if (firstLength > secondLength) {
+            firstLength -= secondLength;
+        } else {
+            secondLength -= firstLength;
+        }
+    }
+
+    return str1.slice(0, firstLength);
 };
