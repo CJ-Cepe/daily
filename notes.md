@@ -91,3 +91,7 @@
     -   In Unix systems the end of a line is represented with a line feed (LF). In windows a line is represented with a carriage return (CR) and a line feed (LF) thus (CRLF).when you get code from git that was uploaded from a unix system they will only have an LF.
 -   String has a method to repeat string --> string.repeat(int)
 -   when the largest/longest is needed, try being greedy and search while decrementing
+-   in handling pattern you can use this to quickly compare/test str1+str2 != str2+str1
+-   in computing GCD - EUCLIDEAN ALGORITHM can be used
+    -   the length/two numbers are subtracted to each other by the largest - smallest
+    -   when the result is now equal or it will produce a 0 result, it is the GCD
