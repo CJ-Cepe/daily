@@ -95,3 +95,4 @@
 -   in computing GCD - EUCLIDEAN ALGORITHM can be used
     -   the length/two numbers are subtracted to each other by the largest - smallest
     -   when the result is now equal or it will produce a 0 result, it is the GCD
+-   you can use largest = Math.max(...candies) to identify the largest number in an array
