@@ -27,4 +27,39 @@ Example 1:
 Example 3:
     Input: candies = [12,1,12], extraCandies = 10
     Output: [true,false,true]
+
+
+Solution 1
+    1. identify largest number
+    2. get required Number by subtracting largest number and extra candies
+    3. the required Number is the number the element needs to be at = or greater to be true
+    4. traverse through the whole array, and compare each element to the required Number
+    5. push true if >= while push false of <
+
 */
+
+/**
+ * @param {number[]} candies
+ * @param {number} extraCandies
+ * @return {boolean[]}
+ */
+
+var kidsWithCandies = function (candies, extraCandies) {
+    //Solution 1
+    let arr = [],
+        max = 0,
+        requiredNum = 0;
+
+    candies.forEach(function (value) {
+        max = value > max ? value : max;
+    });
+
+    //if extraCandies is larger than max, then whatever we add it is still the largest
+    requiredNum = max >= extraCandies ? max - extraCandies : 0;
+
+    candies.forEach(function (value) {
+        value >= requiredNum ? arr.push(true) : arr.push(false);
+    });
+
+    return arr;
+};
