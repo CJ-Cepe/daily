@@ -36,6 +36,14 @@ Solution 1
     4. traverse through the whole array, and compare each element to the required Number
     5. push true if >= while push false of <
 
+Solution 2
+    1. identify largest number throught math max and spreader operator
+    2. traverse through the whole array
+    3. per element add the extracandies and compare if >= or <
+    4. if >= push true
+    5. else push false
+    6. return arr
+
 */
 
 /**
@@ -59,6 +67,16 @@ var kidsWithCandies = function (candies, extraCandies) {
 
     candies.forEach(function (value) {
         value >= requiredNum ? arr.push(true) : arr.push(false);
+    });
+
+    return arr;
+
+    //solution 2
+    let arr = [];
+    let max = Math.max(...candies);
+
+    candies.forEach((value) => {
+        value + extraCandies >= max ? arr.push(true) : arr.push(false);
     });
 
     return arr;
