@@ -80,4 +80,8 @@ var kidsWithCandies = function (candies, extraCandies) {
     });
 
     return arr;
+
+    //Solution 4 - using map
+    let max = Math.max(...candies);
+    return candies.map((value) => value + extraCandies >= max);
 };
