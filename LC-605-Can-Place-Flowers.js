@@ -16,4 +16,47 @@ Example 2:
     Input: flowerbed = [1,0,0,0,1], n = 2
     Output: false
 
+Solution 1 - use counter
+    1. traverse through the whole array
+    2. if current element == 0 counter++
+    3.      else (1) counter = 0 
+    4. if counter === 3
+    5.      planted++ & counter = 1
+    6. to handle corners or endings
+    7.      if starting from 0 then counter = 0
+    8.      else if starting with 1 then counter = 2
+    9. to handle n = 0
+    10.     if length == 1 return boolean equivalent of first element
+    11. lastly, return planted >= n
+
 */
+
+/**
+ * @param {number[]} flowerbed
+ * @param {number} n
+ * @return {boolean}
+ */
+var canPlaceFlowers = function (flowerbed, n) {
+    if (!n) return true;
+    if (flowerbed.length == 1) return !!!flowerbed[0];
+    let counter = flowerbed[0] == 1 ? 0 : 2;
+    let numPlanted = 0;
+
+    for (let i = 1; i < flowerbed.length; i++) {
+        if (flowerbed[i] == 1) {
+            counter = 0;
+        } else {
+            counter++;
+        }
+
+        if (counter == 2 && i == flowerbed.length - 1) {
+            counter++;
+        }
+
+        if (counter === 3) {
+            counter = 1;
+            numPlanted++;
+        }
+    }
+    return numPlanted >= n;
+};
