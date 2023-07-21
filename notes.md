@@ -99,4 +99,4 @@
 -   to convert values to its boolean equivalent
     -   !!variable
     -   boolean(variable)
--
+-   initializing, defining, vs declaration
