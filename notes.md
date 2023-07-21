@@ -99,3 +99,4 @@
 -   to convert values to its boolean equivalent
     -   !!variable
     -   boolean(variable)
+-

@@ -29,6 +29,17 @@ Solution 1 - use counter
     10.     if length == 1 return boolean equivalent of first element
     11. lastly, return planted >= n
 
+Solution 2 - without mutating the array
+    1. initialize a (before) variable to 0
+    2. traverse throught he whole array
+    3. check if 
+    4.      before == 0
+    5.      current-element == 0
+    6.      after-element == 0 || index == last element
+    7.  then before = 1 && n--
+    8.  else before = current-element
+    9.  return n <= 0 
+
 */
 
 /**
@@ -59,4 +70,22 @@ var canPlaceFlowers = function (flowerbed, n) {
         }
     }
     return numPlanted >= n;
+
+    //solution 2 - without mutating array
+    let before = 0;
+
+    for (let i = 0; i < flowerbed.length; i++) {
+        if (
+            before == 0 &&
+            flowerbed[i] == 0 &&
+            (flowerbed[i + 1] == 0 || i == flowerbed.length - 1)
+        ) {
+            before = 1;
+            n--;
+        } else {
+            before = flowerbed[i];
+        }
+    }
+
+    return n <= 0;
 };
