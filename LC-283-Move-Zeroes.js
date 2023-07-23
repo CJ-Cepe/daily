@@ -23,3 +23,23 @@ Solution 1 - splice and push
     3. i-- to handle 0, 0, 1
     4. size-- to handle never ending/infinite loop
 */
+
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+var moveZeroes = function (nums) {
+    //Solution 1 - splice and push
+    let size = nums.length - 1;
+    for (let i = 0; i < size; i++) {
+        if (nums[i] == 0) {
+            nums.splice(i, 1);
+            nums.push(0);
+            i--;
+            size--;
+        }
+    }
+    return nums;
+
+    //Solution 2 - two pointers
+};
