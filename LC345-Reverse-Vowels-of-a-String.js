@@ -15,4 +15,15 @@ Example 2:
     Input: s = "leetcode"
     Output: "leotcede"
 
+
+Solution 1 - 2 pointers
+    1. initialize 2 pointers: i = 0, j = s.length - 1
+    2. traverse through the whole array from the start and end
+    3. if character[i] is a vowel and character[j] is a vowel, then swap
+    4.      i++
+    5.      j--
+    6. else if character[i] is not vowel
+    7.      i++
+    8. else if character[j] is not vowel
+    9.      j--
 */
