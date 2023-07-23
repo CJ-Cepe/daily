@@ -16,4 +16,10 @@ Example 1:
 Example 2:
     Input: nums = [0]
     Output: [0]
+
+Solution 1 - splice and push
+    1. traverse through the whole array
+    2. if current element is 0 splice it and push 0
+    3. i-- to handle 0, 0, 1
+    4. size-- to handle never ending/infinite loop
 */
