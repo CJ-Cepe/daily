@@ -100,3 +100,10 @@
     -   !!variable
     -   boolean(variable)
 -   initializing, defining, vs declaration
+-   toLowerCase() exist
+-   when handling string, it is usually better to convert it into array to use array methods and properties
+    -   when handling string, always consider the casing and special characters
+    -   string does not have ES6 array destructuring
+    -   string.split('') -> array
+    -   array.join('') -> string
+    -   array.inludes(s[i].toLowerCase()) --> can be use to check if present aw well as handle uppercase
