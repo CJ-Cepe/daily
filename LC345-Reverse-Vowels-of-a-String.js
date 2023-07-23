@@ -27,3 +27,32 @@ Solution 1 - 2 pointers
     8. else if character[j] is not vowel
     9.      j--
 */
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var reverseVowels = function (s) {
+    //Solution 1 - two pointers
+
+    let i = 0,
+        j = s.length - 1,
+        vowels = 'aeiou'.split(''),
+        z = s.split('');
+
+    while (i < j) {
+        if (
+            vowels.includes(z[i].toLowerCase()) &&
+            vowels.includes(z[j].toLowerCase())
+        ) {
+            [z[i], z[j]] = [z[j], z[i]];
+            i++;
+            j--;
+        } else if (!vowels.includes(z[i].toLowerCase())) {
+            i++;
+        } else if (!vowels.includes(z[j].toLowerCase())) {
+            j--;
+        }
+    }
+    return z.join('');
+};
