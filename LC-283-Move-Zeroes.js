@@ -22,6 +22,14 @@ Solution 1 - splice and push
     2. if current element is 0 splice it and push 0
     3. i-- to handle 0, 0, 1
     4. size-- to handle never ending/infinite loop
+
+Solution 2 - two pointers version 1
+    1. the first pointer traverse through the whole array
+    2. the second pointer points to the location of current 0
+    3. if the first pointer encounter 0 - ignore
+    4. else if element = 0, element j = element i
+    5. element i = 0, j++
+    6. if j != 0 then j++ 
 */
 
 /**
