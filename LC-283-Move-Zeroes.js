@@ -41,5 +41,17 @@ var moveZeroes = function (nums) {
     }
     return nums;
 
-    //Solution 2 - two pointers
+    //Solution 2 - two pointers version 1
+    if (nums.length <= 1) return nums;
+
+    for (let i = 0, j = 0; i < nums.length; i++) {
+        if (nums[i] && !nums[j]) {
+            nums[j] = nums[i];
+            nums[i] = 0;
+            j++;
+        } else if (nums[j]) {
+            j++;
+        }
+    }
+    return nums;
 };
