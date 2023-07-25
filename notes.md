@@ -107,3 +107,6 @@
     -   string.split('') -> array
     -   array.join('') -> string
     -   array.inludes(s[i].toLowerCase()) --> can be use to check if present aw well as handle uppercase
+-   objects are passed by reference
+    -   this means that the variable passed becomes a local one that contains the same reference
+    -   even if you change the local variable, it wont change the one in the outside
