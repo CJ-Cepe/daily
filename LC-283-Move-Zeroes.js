@@ -30,6 +30,12 @@ Solution 2 - two pointers version 1
     4. else if element = 0, element j = element i
     5. element i = 0, j++
     6. if j != 0 then j++ 
+
+Solution 3 - travese helper array
+    1. traverse through the whole array
+    2. if number is encountered, push to array 1
+    3. else push to array 2
+    4. return array1 + array2
 */
 
 /**
