@@ -68,4 +68,21 @@ var moveZeroes = function (nums) {
         }
     }
     return nums;
+
+    //solution 3 - create two arrays
+    //1. traverse first, if encounter non 0, push to new
+    //2. push 0 that till length of first array
+    // but no return
+    let nums2 = [],
+        numsZero = [];
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i]) {
+            nums2.push(nums[i]);
+        } else if (nums[i] == 0) {
+            numsZero.push(nums[i]);
+        }
+    }
+
+    return nums2 + numsZero;
 };
