@@ -49,6 +49,16 @@ var containsDuplicate = function (nums) {
 
     return counter >= 2
     */
+
+    //solution 2 - compare next to each other
+    nums = nums.sort();
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] == nums[i + 1]) {
+            return true;
+        }
+    }
+    return false;
+
     //solution 3 - using objects
     //Solution 4 - using sets
 };
