@@ -110,3 +110,14 @@
 -   objects are passed by reference
     -   this means that the variable passed becomes a local one that contains the same reference
     -   even if you change the local variable, it wont change the one in the outside
+-   iterators ++a and a++ changes the variable
+    -   a = 5
+    -   b = ++a
+    -   a = 6
+    -   a + b = 12
+-   sets are like array, but for handling arrays that needs to be unique
+    -   sets are created/initialize using constructor only
+        -   new Sets([array])
+    -   A JavaScript Set is a collection of unique values.
+    -   Each value can only occur once in a Set.
+    -   A Set can hold any value of any data type.
