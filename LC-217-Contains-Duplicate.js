@@ -72,5 +72,13 @@ var containsDuplicate = function (nums) {
     return false;
 
     //solution 3 - using objects
+    let a = {};
+    for (let i = 0; i < nums.length; i++) {
+        a[nums[i]] = a[nums[i]] + 1 || 1;
+        if (a[nums[i]] >= 2) return true;
+    }
+
+    return false;
+
     //Solution 4 - using sets
 };
