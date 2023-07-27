@@ -33,7 +33,9 @@ Solution 3 - use object
     6. if >= 2 return true
     7. outside for loop return false
 
-
+Solution 4 - using sets
+    1. create a new sets using set constructor as nums as argument
+    2. compare their sizes then return the result
 */
 
 /**
