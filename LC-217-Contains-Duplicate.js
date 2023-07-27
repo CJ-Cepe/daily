@@ -83,4 +83,6 @@ var containsDuplicate = function (nums) {
     return false;
 
     //Solution 4 - using sets
+    let uniqueNums = new Set(nums);
+    return uniqueNums.size !== nums.length;
 };
