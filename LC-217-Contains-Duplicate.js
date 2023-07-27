@@ -21,6 +21,18 @@ Solution 1
     1. sort array
     2. use counter
 
+Solution 2
+    1. sort then compare to the next
+
+Solution 3 - use object
+    1. initializa an empty object
+    2. traverse through the whole array.
+    3. set current element as object key
+    4. if it doen't exist create one = 1
+    5. if it exist append/increment
+    6. if >= 2 return true
+    7. outside for loop return false
+
 
 */
 
