@@ -122,4 +122,5 @@
     -   Each value can only occur once in a Set.
     -   A Set can hold any value of any data type.
 -   comma is an operator
+    -   evaluates each of its operands (from left to right) and returns the value of the last operand.
     -   let a = (1, 2, 3) a = 3
