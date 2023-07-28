@@ -16,6 +16,8 @@ Example 2:
 
 Solution 1 - try every element
     1. traverse through the whole array nested loop
+
+Solution 2 - window
 */
 
 /**
@@ -28,6 +30,17 @@ var containsNearbyDuplicate = function (nums, k) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = 0; j < nums.length; j++) {
             if (i != j && nums[i] == nums[j] && Math.abs(i - j) <= k) {
+                return true;
+            }
+        }
+    }
+    return false;
+
+    //Solution 2
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = 1; j <= k; j++) {
+            //logic
+            if (nums[i] == nums[i + j] && Math.abs(i - (i + j)) <= k) {
                 return true;
             }
         }
