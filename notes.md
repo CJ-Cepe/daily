@@ -126,5 +126,6 @@
     -   The comma operator is completely different from commas used as syntactic separators in other locations
     -   let a = (1, 2, 3) a = 3
 -   An empty string or undefined value are falsy, but an empty array or object are truthy.
+-   Object keys can only be strings, and even though a developer can use other data types to set an object key, JavaScript automatically converts keys to a string value.
 -   Not working, a = {watermelon: 1}
     -   console.log(a[watermelon])
