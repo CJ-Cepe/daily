@@ -54,4 +54,14 @@ var containsNearbyDuplicate = function (nums, k) {
         }
     }
     return false;
+
+    //Solution 3 - object
+    let container = {};
+    for (let i = 0; i < nums.length; i++) {
+        if (container[nums[i]] != undefined && i - container[nums[i]] <= k) {
+            return true;
+        }
+        container[nums[i]] = i;
+    }
+    return false;
 };
