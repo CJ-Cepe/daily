@@ -18,6 +18,14 @@ Solution 1 - try every element
     1. traverse through the whole array nested loop
 
 Solution 2 - window
+
+Solution 3 - object
+    1. initialize an empty object
+    2. traverse through the whole array
+    3. assign current element as key while index as value, to serve as property
+    4. if currentElement as key exist && current i - saved index <= k
+    5.      return true
+    6. outside for loop, return false 
 */
 
 /**
