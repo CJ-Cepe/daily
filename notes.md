@@ -125,3 +125,6 @@
     -   evaluates each of its operands (from left to right) and returns the value of the last operand.
     -   The comma operator is completely different from commas used as syntactic separators in other locations
     -   let a = (1, 2, 3) a = 3
+-   An empty string or undefined value are falsy, but an empty array or object are truthy.
+-   Not working, a = {watermelon: 1}
+    -   console.log(a[watermelon])
