@@ -21,3 +21,19 @@ Solution 1 - utilizing set
     3. if it exist, push it to the container
     4. return container
 */
+
+//solution 1
+//traverse through the whole array
+//utilize set
+
+let newNums1 = Array.from(new Set(nums1)),
+    newNums2 = Array.from(new Set(nums2));
+result = [];
+
+for (let i = 0; i < newNums2.length; i++) {
+    for (let j = 0; j < newNums1.length; j++) {
+        if (newNums2[i] == newNums1[j]) {
+            result.push(newNums2[i]);
+        }
+    }
+}
