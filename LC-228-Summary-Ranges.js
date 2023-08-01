@@ -32,6 +32,7 @@ var summaryRanges = function (nums) {
 
     //Solution 1 -> n+1 - n = 1
     if (!nums.length) return [];
+
     let container = [],
         start = nums[0],
         counter = 1;
