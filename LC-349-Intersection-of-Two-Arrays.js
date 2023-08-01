@@ -14,4 +14,10 @@ Example 2:
     Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
     Output: [9,4]
     Explanation: [4,9] is also accepted.
+
+Solution 1 - utilizing set
+    1. get the arrays unique version through set
+    2. nested loop, traverse and compare
+    3. if it exist, push it to the container
+    4. return container
 */
