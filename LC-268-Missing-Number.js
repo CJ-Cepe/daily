@@ -24,3 +24,38 @@ Solution 1
     3. if not, return i
     4. else return last index + 1
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var missingNumber = function (nums) {
+    //facts
+    //the missing number is always in the middle
+    //  unless range is < 2
+    //starts with 0, ends with n
+    //no duplicate
+
+    //edge case
+    //[0] = 1
+    //[1] = 0
+    //[0, 1] = 2
+    //[0, 2] = 1
+
+    //solution 1
+    //sort
+    //traverse and use the index of a for loop to identify the missing number
+    nums = nums.sort((a, b) => a - b);
+
+    console.log(nums);
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] != i) {
+            return i;
+        }
+    }
+    return nums[nums.length - 1] + 1;
+
+    //solution 2
+    //for loop, use index
+    //use objects
+};
