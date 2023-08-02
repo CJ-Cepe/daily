@@ -28,7 +28,12 @@ Solution 2 - using objects
     4. if it is, push to empty array
     5. return the array as set of unique
 
-
+Solution 3 - greedy
+    1. initialize an empty array
+    2. nested loop, traverse through the whole array
+    3. compare if element in nums2 in nums1
+    4. if same, push to new array
+    5. return array as set
 */
 
 //solution 1
