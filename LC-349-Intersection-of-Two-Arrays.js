@@ -62,3 +62,18 @@ for (let i = 0; i < nums2.length; i++) {
 }
 
 return Array.from(new Set(a));
+
+//Solution 3 - greedy
+if (nums1.length == 0 || nums2.length == 0) return [];
+
+let a = [];
+for (let i = 0; i < nums1.length; i++) {
+    for (let j = 0; j < nums2.length; j++) {
+        if (nums1[i] == nums2[j]) {
+            a.push(nums1[i]);
+            break;
+        }
+    }
+}
+
+return Array.from(new Set(a));
