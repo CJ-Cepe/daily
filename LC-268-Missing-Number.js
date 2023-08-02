@@ -18,5 +18,9 @@ Example 2:
     Explanation: n = 2 since there are 2 numbers, so all numbers are 
     in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
 
-
+Solution 1
+    1. sort array, traverse using for loop utilizing the index
+    2. compare if index is equals to the current element
+    3. if not, return i
+    4. else return last index + 1
 */
