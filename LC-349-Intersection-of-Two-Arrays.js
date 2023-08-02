@@ -27,6 +27,8 @@ Solution 2 - using objects
     3. traverse through the whole second array and check if it exist in the object
     4. if it is, push to empty array
     5. return the array as set of unique
+
+
 */
 
 //solution 1
@@ -41,3 +43,17 @@ for (let i = 0; i < newNums2.length; i++) {
         }
     }
 }
+
+//Solution 2 - object
+let a = [],
+    b = {};
+for (let i = 0; i < nums1.length; i++) {
+    b[nums1[i]] = 1;
+}
+for (let i = 0; i < nums2.length; i++) {
+    if (b[nums2[i]] != undefined) {
+        a.push(nums2[i]);
+    }
+}
+
+return Array.from(new Set(a));
