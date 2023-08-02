@@ -20,12 +20,16 @@ Solution 1 - utilizing set
     2. nested loop, traverse and compare
     3. if it exist, push it to the container
     4. return container
+
+Solution 2 - using objects
+    1. initialize and empty object and array
+    2. traverse through the whole first array and list the elements as key
+    3. traverse through the whole second array and check if it exist in the object
+    4. if it is, push to empty array
+    5. return the array as set of unique
 */
 
 //solution 1
-//traverse through the whole array
-//utilize set
-
 let newNums1 = Array.from(new Set(nums1)),
     newNums2 = Array.from(new Set(nums2));
 result = [];
