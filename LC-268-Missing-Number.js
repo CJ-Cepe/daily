@@ -58,4 +58,11 @@ var missingNumber = function (nums) {
     //solution 2
     //for loop, use index
     //use objects
+
+    //Solution 3
+    let res = new Array(nums.length + 1).fill(-1);
+    for (let i = 0; i < nums.length; i++) {
+        res[nums[i]] = nums[i];
+    }
+    return res.indexOf(-1);
 };
