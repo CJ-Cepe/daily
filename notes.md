@@ -130,3 +130,4 @@
 -   Not working, a = {watermelon: 1}
     -   console.log(a[watermelon])
 -   array.fill() can be used to fill an array
+-   new Array () constructor can be used to make new array
