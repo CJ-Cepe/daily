@@ -129,3 +129,4 @@
 -   Object keys can only be strings, and even though a developer can use other data types to set an object key, JavaScript automatically converts keys to a string value.
 -   Not working, a = {watermelon: 1}
     -   console.log(a[watermelon])
+-   array.fill() can be used to fill an array
