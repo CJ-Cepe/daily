@@ -131,3 +131,4 @@
     -   console.log(a[watermelon])
 -   array.fill() can be used to fill an array
 -   new Array () constructor can be used to make new array
+    -   array literal is less risky than constructor
