@@ -12,3 +12,5 @@
             -   The most common variable you'll see is n, which usually denotes the length of an input array or string.
         -   Assumptions
             -   when dealing with integers, the larger the value, the more time operations like addition, multiplication, or printing will take
+    -   Analyzing time complexity
+    -   Analyzing space complexity
