@@ -34,3 +34,23 @@ Solution 1
 2. return 3rd element if it exist
 3. if it does not, return first element
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var thirdMax = function (nums) {
+    //Solution 1
+    //sort reverse then set
+    //return 3rd num
+    //if undefined return 2nd max
+
+    if (nums.length == 0) return [];
+
+    let newNums = Array.from(new Set(nums)).sort((a, b) => b - a);
+    if (newNums[2] != undefined) {
+        return newNums[2];
+    } else {
+        return newNums[0];
+    }
+};
