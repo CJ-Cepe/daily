@@ -29,4 +29,8 @@ Example 3:
     The second distinct maximum is 2 (both 2's are counted together since they have the same value).
     The third distinct maximum is 1.
 
+Solution 1
+1. convert to set then sort reverse as array
+2. return 3rd element if it exist
+3. if it does not, return first element
 */
