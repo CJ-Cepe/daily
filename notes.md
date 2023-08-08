@@ -132,3 +132,8 @@
 -   array.fill() can be used to fill an array
 -   new Array () constructor can be used to make new array
     -   array literal is less risky than constructor
+-   You can assign the same value to multiple variables using this syntax
+    -   a = b = c = value
+-   You can literally assign Infinity as value
+    -   Infinity
+    -   -Infinity
