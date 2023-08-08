@@ -134,6 +134,15 @@
     -   array literal is less risky than constructor
 -   You can assign the same value to multiple variables using this syntax
     -   a = b = c = value
--   You can literally assign Infinity as value
+-   You can literally assign Infinity as value.
     -   Infinity
     -   -Infinity
+-   The Infinity global property is a numeric value representing infinity
+    -   The value Infinity (positive infinity) is greater than any other number.
+        -   This value behaves slightly differently than mathematical infinity
+            -   console.log(Infinity); /_ Infinity _/
+            -   console.log(Infinity + 1); /_ Infinity _/
+            -   console.log(Math.pow(10, 1000)); /_ Infinity _/
+            -   console.log(Math.log(0)); /_ -Infinity _/
+            -   console.log(1 / Infinity); /_ 0 _/
+            -   console.log(1 / 0); /_ Infinity _/
