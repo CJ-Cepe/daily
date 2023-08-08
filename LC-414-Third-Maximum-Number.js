@@ -63,4 +63,25 @@ var thirdMax = function (nums) {
     } else {
         return newNums[0];
     }
+
+    //solution 2 --greedy --hardcode
+    let a = -Infinity,
+        b = -Infinity,
+        c = -Infinity;
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === a || nums[i] === b || nums[i] === c) continue;
+        if (nums[i] > a) {
+            c = b;
+            b = a;
+            a = nums[i];
+        } else if (nums[i] > b) {
+            c = b;
+            b = nums[i];
+        } else if (nums[i] > c) {
+            c = nums[i];
+        }
+    }
+
+    return c === -Infinity ? a : c;
 };
