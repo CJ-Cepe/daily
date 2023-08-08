@@ -33,6 +33,16 @@ Solution 1
 1. convert to set then sort reverse as array
 2. return 3rd element if it exist
 3. if it does not, return first element
+
+Solution 2 -- three pointers
+1. initialize 3 pointers with -Infinity
+2. traverse through the whole array
+3. if current element is equals to the content of the three pointers, continue
+4. else, compare current element to the content of the three pointers,
+5. if current element is > than a, then c = b, b = a, a = current Element
+6. else if current element is > than b, then b = a, a = current Element
+7. else if current element is > than c, then c = current Element
+8. if c is == to -Infinity, return a else c
 */
 
 /**
