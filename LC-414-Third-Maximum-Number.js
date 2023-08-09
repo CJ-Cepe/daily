@@ -92,7 +92,7 @@ var thirdMax = function (nums) {
 
     return c === -Infinity ? a : c;
 
-    //solution 4 - math max + ...
+    //solution 3 - math max + ...
     if (nums.length < 3) return Math.max(...nums);
     let newNums = new Set(nums);
     if (newNums.size < 3) return Math.max(...newNums);
