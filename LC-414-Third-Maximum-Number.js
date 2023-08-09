@@ -91,4 +91,15 @@ var thirdMax = function (nums) {
     }
 
     return c === -Infinity ? a : c;
+
+    //solution 4 - math max + ...
+    if (nums.length < 3) return Math.max(...nums);
+    let newNums = new Set(nums);
+    if (newNums.size < 3) return Math.max(...newNums);
+
+    for (let i = 0; i < 2; i++) {
+        newNums.delete(Math.max(...newNums));
+    }
+
+    return Math.max(...newNums);
 };
