@@ -43,6 +43,13 @@ Solution 2 -- three pointers
 6. else if current element is > than b, then b = a, a = current Element
 7. else if current element is > than c, then c = current Element
 8. if c is == to -Infinity, return a else c
+
+Solution 3 -- using built in methods
+    1. check if array is < 3, if so return max value within array
+    2. convert array to set to remove duplicates
+    3. check if newSet is < 3, if so return the max value within the set
+    4. Loop 2 times within the newSet and remove the current highest element
+    5. lastly, return current max value in the newSet
 */
 
 /**
