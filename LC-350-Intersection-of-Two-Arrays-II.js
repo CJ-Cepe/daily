@@ -23,3 +23,32 @@ Solution 1 -- using objects
     4. if the current element exist in the object, decrement and push element to the result array
     5. return result array
 */
+
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number[]}
+ */
+var intersect = function (nums1, nums2) {
+    //solution 1 - pointers
+    //solution 2 - objects
+    let list = {},
+        results = [];
+
+    for (let i = 0; i < nums1.length; i++) {
+        list[nums1[i]] = list[nums1[i]] + 1 || 1;
+    }
+
+    for (let i = 0; i < nums2.length; i++) {
+        if (list[nums2[i]] != undefined) {
+            if (list[nums2[i]] != 0) {
+                list[nums2[i]] = list[nums2[i]] - 1;
+                results.push(nums2[i]);
+            }
+        }
+    }
+
+    return results;
+
+    //solution 3 - sorted
+};
