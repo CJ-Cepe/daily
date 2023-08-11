@@ -22,6 +22,14 @@ Solution 1 -- using objects
     3. traverse through the second array and compare the current element to the content of the object
     4. if the current element exist in the object, decrement and push element to the result array
     5. return result array
+
+Solution 2 -- js methods
+    1. initialize and empty array
+    2. traverse through the whole first array
+    3. check if current element is in array2
+    4. if yes, push the current element to the result
+    5. remove the similar element in array2 using splice
+    6. return result
 */
 
 /**
