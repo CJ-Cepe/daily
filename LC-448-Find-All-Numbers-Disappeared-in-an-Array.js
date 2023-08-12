@@ -21,3 +21,31 @@ Solution 1
  5. if no, push to result array, else continue
  6. return array
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var findDisappearedNumbers = function (nums) {
+    //facts
+    //[1, 1 < n]    - inclusive
+
+    //solution 1
+    //initialize an empty array
+    //traverse through the whole array using for loop, till the length of nums
+    //check if current index in the array
+    //if not, push to result
+    //else continue
+
+    let result = [];
+    for (let i = 1; i <= nums.length; i++) {
+        if (!nums.includes(i)) result.push(i);
+    }
+    return result;
+
+    //alternative to includes is binary search
+    //set can also be use to remove duplicates
+    //math ?
+    //Get the sum of numbers from (1, n) - by the total of the array
+    //use object, get the unique
+};
