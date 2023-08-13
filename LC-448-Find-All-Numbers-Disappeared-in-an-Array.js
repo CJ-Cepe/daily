@@ -55,4 +55,19 @@ var findDisappearedNumbers = function (nums) {
     //math ?
     //Get the sum of numbers from (1, n) - by the total of the array
     //use object, get the unique
+
+    //Solution 2 - using objects
+    let a = {},
+        result = [];
+    nums.forEach((value) => {
+        a[value] = 1;
+    });
+
+    for (let i = 1; i <= nums.length; i++) {
+        if (a[i] == undefined) {
+            result.push(i);
+        }
+    }
+
+    return result;
 };
