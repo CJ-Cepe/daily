@@ -20,6 +20,13 @@ Solution 1
  4. check if current element is included in the array
  5. if no, push to result array, else continue
  6. return array
+
+ SOlution 2
+ 1. intialize and empty object and array
+ 2. traverse through the whole array, per element set as key and assign 1
+ 3. for loop, till <= nums.length, check if current index is present as key in the object
+ 4. if not, push to the array
+ 5. return array as result
 */
 
 /**
