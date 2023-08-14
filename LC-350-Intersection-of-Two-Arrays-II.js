@@ -30,6 +30,13 @@ Solution 2 -- js methods
     4. if yes, push the current element to the result
     5. remove the similar element in array2 using splice
     6. return result
+
+Solution 3 - set
+    1. get unique and sorted by sorting array then converting to set then to array again
+    2. traverse using for loop
+    3. check if current index is in the array
+    4. if not, push index in the result
+    5. return result
 */
 
 /**
