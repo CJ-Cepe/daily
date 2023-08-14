@@ -77,4 +77,15 @@ var intersect = function (nums1, nums2) {
     }
 
     return result;
+
+    //Solution - set and sort
+    let newNums = Array.from(new Set(nums.sort((a, b) => a - b))),
+        result = [];
+
+    for (let i = 1; i <= nums.length; i++) {
+        if (!newNums.includes(i)) {
+            result.push(i);
+        }
+    }
+    return result;
 };
