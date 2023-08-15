@@ -96,4 +96,18 @@ var intersect = function (nums1, nums2) {
         }
     }
     return result;
+
+
+    //solution 4
+    
+    let unique = new Set(nums),
+        result = []
+
+    for(let i = 1; i <= nums.length; i++){
+        if(!unique.has(i)){
+            result.push(i)
+        }
+    }
+    
+    return result
 };
