@@ -147,3 +147,4 @@
             -   console.log(1 / Infinity); /_ 0 _/
             -   console.log(1 / 0); /_ Infinity _/
 -   in a set, you can use the delete method "set.delete(value)" to remove a value
+-   to check if a set contains a certain element, use .has() method. as array hace .includes()
