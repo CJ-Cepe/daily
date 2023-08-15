@@ -37,6 +37,14 @@ Solution 3 - set
     3. check if current index is in the array
     4. if not, push index in the result
     5. return result
+
+Solution 4- set
+    1. initialize an empty array for result, and create a set from the array
+    2. traverse through the whole element
+    3. check if set contains current element using .has() method
+    4. if not, push it to the result array
+    5. return result array
+    
 */
 
 /**
@@ -61,7 +69,7 @@ var intersect = function (nums1, nums2) {
                 results.push(nums2[i]);
             }
         }
-    }
+     
 
     return results;
 
