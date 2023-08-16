@@ -38,3 +38,30 @@ Solution 1 - 2 pointers
     5. else j++
     6. return result
 */
+
+/**
+ * @param {number[]} g
+ * @param {number[]} s
+ * @return {number}
+ */
+var findContentChildren = function (g, s) {
+    //intuition
+    //g --> child
+    //s --> cookies
+
+    let kids = g.sort((a, b) => a - b),
+        cookies = s.sort((a, b) => a - b),
+        result = (i = j = 0);
+
+    while (j < cookies.length && i < kids.length) {
+        if (cookies[j] >= kids[i]) {
+            result++;
+            i++;
+            j++;
+        } else {
+            j++;
+        }
+    }
+
+    return result;
+};
