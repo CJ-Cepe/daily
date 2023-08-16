@@ -29,4 +29,12 @@ Example 2:
     Explanation: You have 2 children and 3 cookies. The greed factors of 2 children are 1, 2. 
     You have 3 cookies and their sizes are big enough to gratify all of the children, 
     You need to output 2.
+
+Solution 1 - 2 pointers
+    1. sort both arrays
+    2. in a while loop, compare pointed elements
+    3. if cookies[j] >= kids[i]
+    4. result++, i++, j++
+    5. else j++
+    6. return result
 */
