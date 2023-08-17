@@ -23,4 +23,9 @@ Example 3:
     Input: words = ["adsdf","sfd"]
     Output: ["adsdf","sfd"]
 
+Solution 1
+1. per word, check in what row the first char is in
+2. using that row, check if current element, during traversal is in that row
+3. if not, reject word, else push it to the result
+
 */
