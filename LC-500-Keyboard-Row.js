@@ -28,6 +28,9 @@ Solution 1
 2. using that row, check if current element, during traversal is in that row
 3. if not, reject word, else push it to the result
 
+Solution 2
+1. put possible rows in an array as set to easily manage
+2. use methods such as every() and has()
 */
 
 /**
