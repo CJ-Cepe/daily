@@ -149,3 +149,4 @@
 -   in a set, you can use the delete method "set.delete(value)" to remove a value
 -   to check if a set contains a certain element, use .has() method. as array hace .includes()
     -   significantly faster than using array and using .includes()
+-   every method
