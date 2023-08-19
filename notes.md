@@ -151,3 +151,4 @@
     -   significantly faster than using array and using .includes()
 -   every method
     -   The every() method of Array instances tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+    -   every acts like the "for all" quantifier in mathematics. In particular, for an empty array, it returns true. (It is vacuously true that all elements of the empty set satisfy any given condition.)
