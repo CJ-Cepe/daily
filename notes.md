@@ -150,3 +150,4 @@
 -   to check if a set contains a certain element, use .has() method. as array hace .includes()
     -   significantly faster than using array and using .includes()
 -   every method
+    -   The every() method of Array instances tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
