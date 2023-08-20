@@ -28,5 +28,7 @@ Example 2:
     Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
     Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].
 
-
+Solution 1
+    1. uses  sorting and mapping
+    2. 
 */
