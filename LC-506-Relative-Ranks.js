@@ -32,3 +32,23 @@ Solution 1
     1. uses  sorting and mapping
     2. 
 */
+
+/**
+ * @param {number[]} score
+ * @return {string[]}
+ */
+var findRelativeRanks = function (score) {
+    //INTUITION
+    //scores are guaranteed to be unique
+    //score[i] is the score of the ith athelete
+
+    let sc = [...score].sort((a, b) => b - a);
+    let result = score.map((value) => {
+        let index = sc.indexOf(value);
+        if (index === 0) return 'Gold Medal';
+        if (index === 1) return 'Silver Medal';
+        if (index === 2) return 'Bronze Medal';
+        return index + 1 + '';
+    });
+    return result;
+};
