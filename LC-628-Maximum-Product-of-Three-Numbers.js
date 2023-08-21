@@ -24,3 +24,22 @@ Solution 1
     multiply the first 2 and the last 1
     get the max of these
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var maximumProduct = function (nums) {
+    let length = nums.length,
+        a = (b = c = d = 0);
+    nums.sort((a, b) => a - b);
+
+    a = nums[length - 1] * nums[length - 2] * nums[length - 3];
+    b = nums[0] * nums[1] * nums[2];
+    c = nums[0] * nums[1] * nums[length - 1];
+    d = nums[0] * nums[length - 1] * nums[length - 2];
+
+    return Math.max(a, b, c, d);
+
+    //Solution 2 - use only the product of the 3 largest, or the product of the 2 smallest and 1 largest
+};
