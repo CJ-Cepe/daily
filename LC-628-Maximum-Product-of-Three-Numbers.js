@@ -48,4 +48,12 @@ var maximumProduct = function (nums) {
     return Math.max(a, b, c, d);
 
     //Solution 2 - use only the product of the 3 largest, or the product of the 2 smallest and 1 largest
+
+    let length = nums.length,
+        a,
+        b;
+    nums.sort((a, b) => a - b);
+    a = nums[length - 1] * nums[length - 2] * nums[length - 3];
+    b = nums[0] * nums[1] * nums[length - 1];
+    return Math.max(a, b);
 };
