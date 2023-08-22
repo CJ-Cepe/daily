@@ -23,6 +23,12 @@ Solution 1
     multiply the last 2 and the first 1
     multiply the first 2 and the last 1
     get the max of these
+
+Solution 2
+    sort array
+    multiply the last 3
+    multiply the first 2 and the last element
+    return the max value between the 2 product
 */
 
 /**
