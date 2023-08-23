@@ -22,3 +22,25 @@ Solution 1 - brute force
     3. if it is, replace else nothing
     4. return results
 */
+
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var findMaxAverage = function (nums, k) {
+    //INTUITION
+    //in random
+    //not sorted
+
+    //brute force
+    let result = -Infinity;
+    for (let i = 0; i <= nums.length - k; i++) {
+        let subArray = nums.slice(i, i + k);
+        let tempResult = subArray.reduce(
+            (accumulator, currentValue) => accumulator + currentValue
+        );
+        if (tempResult > result) result = tempResult;
+    }
+    return result / k;
+};
