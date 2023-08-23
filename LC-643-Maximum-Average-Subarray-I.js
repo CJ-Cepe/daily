@@ -15,4 +15,10 @@ Example 1:
 Example 2:
     Input: nums = [5], k = 1
     Output: 5.00000
+
+Solution 1 - brute force
+    1. per index till k, get summation
+    2. per iteration, check if it is larger than the current result
+    3. if it is, replace else nothing
+    4. return results
 */
