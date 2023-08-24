@@ -73,4 +73,20 @@ var findMaxAverage = function (nums, k) {
         if (tempResult > result) result = tempResult;
     }
     return result / k;
+
+    //Solution 3 - sliding window
+    let maximumSum = 0;
+
+    for (let i = 0; i < k; i++) {
+        maximumSum += nums[i];
+    }
+    let previousSum = maximumSum;
+
+    for (let i = 1; i <= nums.length - k; i++) {
+        let currentSum = previousSum - nums[i - 1] + nums[i + k - 1];
+        previousSum = currentSum;
+
+        maximumSum = currentSum > maximumSum ? currentSum : maximumSum;
+    }
+    return maximumSum / k;
 };
