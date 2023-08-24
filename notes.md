@@ -154,3 +154,4 @@
     -   every acts like the "for all" quantifier in mathematics. In particular, for an empty array, it returns true. (It is vacuously true that all elements of the empty set satisfy any given condition.)
         -callbackFn is invoked only for array indexes which have assigned values. It is not invoked for empty slots in sparse arrays.
 -   to make a copy of an array, copy by value not by reference, use ...Variable, spreader operator
+-   when dealing with sliding windows, as much as possible use the information from the previous batch to the next. such as the case for LC -643
