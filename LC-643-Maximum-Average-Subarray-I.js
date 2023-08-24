@@ -50,4 +50,16 @@ var findMaxAverage = function (nums, k) {
         if (tempResult > result) result = tempResult;
     }
     return result / k;
+
+    //Brute Force - version 2
+    let result = -Infinity;
+    for (let i = 0; i <= nums.length - k; i++) {
+        let tempResult = (j = 0);
+        while (j < k) {
+            tempResult += nums[i + j];
+            j++;
+        }
+        if (tempResult > result) result = tempResult;
+    }
+    return result / k;
 };
