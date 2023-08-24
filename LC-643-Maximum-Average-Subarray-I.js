@@ -21,6 +21,13 @@ Solution 1 - brute force
     2. per iteration, check if it is larger than the current result
     3. if it is, replace else nothing
     4. return results
+
+Solution 2 - brute force -version 2
+    1.  per index till k, get summation using while loop
+    2.  to get the needed range, add j to i
+    3.  per iteration compare current sum to the current highest sum
+    4.  if larger, set it as highest sum
+    5.  return the highest sum/k
 */
 
 /**
