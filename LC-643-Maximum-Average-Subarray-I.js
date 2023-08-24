@@ -28,6 +28,17 @@ Solution 2 - brute force -version 2
     3.  per iteration compare current sum to the current highest sum
     4.  if larger, set it as highest sum
     5.  return the highest sum/k
+
+Solution 3 - sliding window
+    1. initialize 3 variables for maximumSum, previousSum, and currentSum
+    2. get the sum of the first batch of elements from element index 0 - k
+    3. set as current maximumSum
+    4. traverse and slide through the whole array with i = 1
+    5. subtract the value from i-1 and add i+k-1 element index
+    6. this is to avoid repeatative addition
+    7. per iterration, check if currentSum is > than the maximumSum
+    8. if so, assign currentSum as maximumSum
+    9. return maximumSum/k
 */
 
 /**
