@@ -19,3 +19,32 @@ Solution 1
     7. else return set size
 
 */
+
+/**
+ * @param {number[]} candyType
+ * @return {number}
+ */
+var distributeCandies = function (candyType) {
+    /*
+    Facts
+        - Alice has n candies
+        - ith candy is of type candyType[i]
+        - n is always even
+        - only eat n / 2 of the candies she has
+        - has duplicates
+        - sorted?
+        - candyType is array
+    
+    Intuition
+        - use set 
+        - 
+    */
+
+    //Solution 1 - using sets
+    let uniqueCandyType = Array.from(new Set(candyType));
+    let allowedCandies = candyType.length / 2;
+
+    return allowedCandies >= uniqueCandyType.length
+        ? uniqueCandyType.length
+        : allowedCandies;
+};
