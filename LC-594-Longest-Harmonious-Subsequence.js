@@ -28,3 +28,41 @@ Solution 1
     - use object to count instances and set unique value as key
     - set current max, and per iteration count their iteration
 */
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var findLHS = function (nums) {
+    /*
+    Facts
+    - max - min = 1
+    - not sorted
+    - value can repeat
+    - nums is an array
+    - return Length
+
+    Intuition
+    - use object
+    - can be sort?
+    */
+
+    //Solution 1
+    //List freq. in object
+    let freqCounter = {},
+        keys = [...new Set(nums)].sort((a, b) => a - b),
+        max = 0;
+    for (let i = 0; i < nums.length; i++) {
+        freqCounter[nums[i]] = freqCounter[nums[i]] + 1 || 1;
+    }
+    for (let i = 0; i < keys.length; i++) {
+        if (
+            freqCounter[keys[i]] != undefined &&
+            freqCounter[keys[i] + 1] != undefined
+        ) {
+            let currentMax = freqCounter[keys[i]] + freqCounter[keys[i + 1]];
+            max = currentMax > max ? currentMax : max;
+        }
+    }
+
+    return max;
+};
