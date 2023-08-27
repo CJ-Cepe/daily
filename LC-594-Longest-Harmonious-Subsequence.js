@@ -24,4 +24,7 @@ Example 3:
     Input: nums = [1,1,1,1]
     Output: 0
 
+Solution 1
+    - use object to count instances and set unique value as key
+    - set current max, and per iteration count their iteration
 */
