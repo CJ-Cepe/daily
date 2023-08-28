@@ -27,6 +27,17 @@ Example 3:
 Solution 1
     - use object to count instances and set unique value as key
     - set current max, and per iteration count their iteration
+
+Solution 2 - two pointers
+    1. sort arrays
+    2. initialize 2 pointers for left and right
+    3. declare LHS to hold the length of longest harmonious sequence
+    4. traverse through the whole array with a condition of right < nums.length
+    5. get difference between nums[right] - nums[left]
+    6. if difference == 1 then set it as LHS if the right - left + 1 is > than current LHS
+    7. if difference > 1, left++
+    8. else, difference <= 1, right++
+    9. return LHS
 */
 /**
  * @param {number[]} nums
