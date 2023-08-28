@@ -76,4 +76,23 @@ var findLHS = function (nums) {
     }
 
     return max;
+
+    //Solution 2 - 2 pointers
+    let left = 0,
+        right = 1,
+        LHS = 0;
+
+    //sort nums
+    nums.sort((a, b) => a - b);
+
+    while (right < nums.length) {
+        let diff = nums[right] - nums[left];
+
+        if (diff === 1) LHS = Math.max(LHS, right - left + 1);
+
+        if (diff > 1) left++;
+        else right++;
+    }
+
+    return LHS;
 };
