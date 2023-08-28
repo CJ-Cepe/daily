@@ -155,3 +155,6 @@
         -callbackFn is invoked only for array indexes which have assigned values. It is not invoked for empty slots in sparse arrays.
 -   to make a copy of an array, copy by value not by reference, use ...Variable, spreader operator
 -   when dealing with sliding windows, as much as possible use the information from the previous batch to the next. such as the case for LC -643
+-   object keys when created, using number as key, is not sorted
+    -   just give illusion of being sorted when using index i in for loop
+-   sets when created, the numbers are NOT sorted
