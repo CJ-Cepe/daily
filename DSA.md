@@ -29,4 +29,32 @@
         -   _O(log\*n)_
         -   _O(n\*m)_
     -   Rules
+        -   These functions describe how the amount of operations/memory needed by the algorithm grows as the arguments tend to infinity. Because the variables are tending to infinity, constants are always ignored
+        -   What we want to focus on is how an algorithm scales with the input size
+            -   because both grow linearly with n
+            -   because as n tends to infinity, 2 <sup>n</sup> completely dominates the other two terms.
+        -   Ignore: constants, addition and subtraction,
+            -   Get dominated
+            -   Groes linearly with n
+            -   want to focus on how an algorithm scales with the input size
+        -   Best Complexity is _0(1)_
+            -   called "constant time" or "constant space"
+                -   O(5000000)=O(1)
+            -   the algorithm ALWAYS uses the same amount of resources, regardless of the input
+            -   runtime is independent of the input size
+        -   3 Normal Cases
+            -   Best case scenario
+            -   Average case scenario
+            -   Worst case scenario
+            -   If only one needs to represent the algorithm, pick the worst case
+            -   In most algorithms, all three of these will be equal, but some algorithms will have them differ.
+        -   Logarithmic
+            -   A logarithm is the inverse operation to exponents
+            -   _0(log n)_ is called logarithmic time and is extremely fast
+                -   means that somewhere in your algorithm, the input is being reduced by a percentage at every step
+                    -   A good example of this is binary search, which is a searching algorithm. At each step, we are reducing our search space by 50%, which gives us a logarithmic time complexity.
+            -   _0(n \* log n)_ is reasonably fast for most problems and also the time complexity of efficient sorting algorithms
+            -   Typically, the base of the logarithm will be 2
+                -   This means that if your input is size n, then the algorithm will perform x operations, where 2<sup>x</sup> = n
+                -   However, the base of the logarithm doesn't actually matter for big O, since all logarithms are related by a constant factor
         -
