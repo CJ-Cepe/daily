@@ -31,11 +31,14 @@
 
     -   ### Time Complexity
 
-        -   the amount of time the algorithm needs to run relative to the input size
+        -   **The amount of time the algorithm needs to run relative to the input size**
 
     -   ### Space Complexity
 
-        -   the amount of memory allocated by the algorithm when run relative to the input size
+        -   **The amount of memory allocated by the algorithm when run relative to the input size**
+        -   When you initialize variables like arrays or strings, your algorithm is allocating memory.
+        -   We never count the space used by the input (_it is bad practice to modify the input_)
+            -   and usually don't count the space used by the output (the answer) unless an interviewer asks us to
 
     -   ### 3 Normal Cases
 
@@ -54,17 +57,12 @@
         -   _O(2<sup>n</sup>)_ - Exponential runtime - algorithms where for each increase in the size of the data set, the runtime is doubled.
         -   _O(n\*m)_
 
-        -   Logarithmic
-            -   A logarithm is the inverse operation to exponents
+    -   ### Logarithmic
+        -   A logarithm is the inverse operation to exponents
             -   _0(log n)_ is called logarithmic time and is extremely fast
                 -   means that somewhere in your algorithm, the input is being reduced by a percentage at every step
-                    -   A good example of this is binary search, which is a searching algorithm. At each step, we are reducing our search space by 50%, which gives us a logarithmic time complexity.
+                -   A good example of this is binary search, which is a searching algorithm. At each step, we are reducing our search space by 50%, which gives us a logarithmic time complexity.
             -   _0(n \* log n)_ is reasonably fast for most problems and also the time complexity of efficient sorting algorithms
-            -   Typically, the base of the logarithm will be 2
+                -   Typically, the base of the logarithm will be 2
                 -   This means that if your input is size n, then the algorithm will perform x operations, where 2<sup>x</sup> = n
                 -   However, the base of the logarithm doesn't actually matter for big O, since all logarithms are related by a constant factor
-
-    -   Analyzing space complexity
-        -   When you initialize variables like arrays or strings, your algorithm is allocating memory.
-        -   We never count the space used by the input (it is bad practice to modify the input)
-            -   and usually don't count the space used by the output (the answer) unless an interviewer asks us to
