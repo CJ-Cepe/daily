@@ -9,6 +9,8 @@
     -   The arguments are defined by the programmer
     -   The most common variable you'll see is **n**, which usually denotes input length
     -   _O(1)_ is the Best Complexity
+    -   If only one needs to represent the algorithm, pick the _worst case_
+    -   In most algorithms, all three _cases_ will be equal, but some algorithms will have them differ
     -   Technically, you could introduce another variable. However, nobody does this
     -   Relies on several simplifying assumptions which are wrong in practice
 
@@ -35,6 +37,12 @@
 
         -   the amount of memory allocated by the algorithm when run relative to the input size
 
+    -   ### 3 Normal Cases
+
+        -   Best case scenario
+        -   Average case scenario
+        -   Worst case scenario
+
     -   ### Common Runtime Complexities
 
         -   _O(1)_ - Constant Runtime - algorithm ALWAYS uses the same amount of resources, regardless of the input
@@ -46,12 +54,6 @@
         -   _O(2<sup>n</sup>)_ - Exponential runtime - algorithms where for each increase in the size of the data set, the runtime is doubled.
         -   _O(n\*m)_
 
-        -   3 Normal Cases
-            -   Best case scenario
-            -   Average case scenario
-            -   Worst case scenario
-            -   If only one needs to represent the algorithm, pick the worst case
-            -   In most algorithms, all three of these will be equal, but some algorithms will have them differ.
         -   Logarithmic
             -   A logarithm is the inverse operation to exponents
             -   _0(log n)_ is called logarithmic time and is extremely fast
