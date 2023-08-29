@@ -57,4 +57,7 @@
             -   Typically, the base of the logarithm will be 2
                 -   This means that if your input is size n, then the algorithm will perform x operations, where 2<sup>x</sup> = n
                 -   However, the base of the logarithm doesn't actually matter for big O, since all logarithms are related by a constant factor
-        -
+    -   Analyzing space complexity
+        -   When you initialize variables like arrays or strings, your algorithm is allocating memory.
+        -   We never count the space used by the input (it is bad practice to modify the input)
+            -   and usually don't count the space used by the output (the answer) unless an interviewer asks us to
