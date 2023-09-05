@@ -159,4 +159,7 @@
     -   just give illusion of being sorted when using index i in for loop
 -   sets when created, the numbers are NOT sorted
 -   if you initialize inside a for loop, its value will repeat every time the line is parse
+    -   Avoiding variable declaration inside a loop
+    -   If a variable is declared inside a loop, JavaScript will allocate fresh memory for it in each iteration, even if older allocations will still consume memory. While this might be acceptable for variables of scalar data types, it may allocate a lot of memory for SCFile variables, or huge arrays or objects.
+    -   not significant performance wise though
 -   the shorthand += will not work when using on variables being declared (for the first time) or being initialized, or at the same time with the keyword let
