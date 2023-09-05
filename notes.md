@@ -159,4 +159,4 @@
     -   just give illusion of being sorted when using index i in for loop
 -   sets when created, the numbers are NOT sorted
 -   if you initialize inside a for loop, its value will repeat every time the line is parse
--   the shorthand += will not work when using on variables being declared (for the first time) or being initialized
+-   the shorthand += will not work when using on variables being declared (for the first time) or being initialized, or at the same time with the keyword let
